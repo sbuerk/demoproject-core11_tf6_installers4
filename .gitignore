@@ -1,0 +1,15 @@
+/vendor
+/public/fileadmin/
+/public/typo3conf/ext/
+/public/typo3temp/
+/public/_assets
+/public/typo3/
+/public/typo3conf/
+/public/index.php
+/public/.htacces
+/var
+.idea
+.cache
+
+
+!.keep

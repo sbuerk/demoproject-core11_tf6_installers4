@@ -1,0 +1,29 @@
+{
+  "name": "local/user-demo",
+  "type": "typo3-cms-extension",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Stefan Buerk",
+      "email": "stefan@buerk.tech"
+    }
+  ],
+  "require": {
+    "typo3/cms-core": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "LOCAL\\Demo\\": "Classes/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "LOCAL\\Demo\\Tests\\": "Tests/"
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "user_demo"
+    }
+  }
+}

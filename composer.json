@@ -1,0 +1,51 @@
+{
+    "name": "sbuerk/core11_tf6_installers4",
+    "description": "TYPO3v11 TestingFramework 6 with ComposerInstallers 4 Demo Project",
+    "type": "project",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Stefan Buerk",
+            "email": "stefan@buerk.tech"
+        }
+    ],
+    "repositories": {
+        "packages": {
+            "type": "path",
+            "url": "packages/*"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "typo3/cms-composer-installers": true,
+            "typo3/class-alias-loader": true
+        },
+        "sort-packages": true,
+        "preferred-install": {
+            "typo3/cms-core": "source",
+            "typo3/cms-composer-installers": "source",
+            "typo3/testing-framework": "source",
+            "*": "dist"
+        },
+        "platform": {
+            "php": "7.4.20"
+        }
+    },
+    "require": {
+        "php": "^7.4 || ^8.0 || ^8.1 || ^8.2",
+        "local/user-demo": "@dev",
+        "typo3/cms-backend": "^11.5",
+        "typo3/cms-composer-installers": "4.0.x-dev",
+        "typo3/cms-core": "^11.5",
+        "typo3/cms-extbase": "^11.5",
+        "typo3/cms-extensionmanager": "^11.5",
+        "typo3/cms-filelist": "^11.5",
+        "typo3/cms-fluid": "^11.5",
+        "typo3/cms-frontend": "^11.5",
+        "typo3/cms-install": "^11.5",
+        "typo3/cms-recordlist": "^11.5"
+    },
+    "require-dev": {
+        "typo3/testing-framework": "~7.0@dev"
+    }
+}
